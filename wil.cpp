@@ -3,17 +3,23 @@
 using namespace std;
 
 int main()
-{
-    int numero1[10];
-    for ( int i=0; i<10; i++)
-    {
-        cout<<"Ingrese un numero: "<<endl;
-        cin>>numero1[i];   
-            while (numero1>=0)
-            {   
-            cout<<"El numero es entero positivo"<<endl;
-            return main();
+{   
+    int numero1=0, suma=0, posicion=0;
+    int sumatoria[25] = {0};
+    
+    cout <<"Ingrese un numero entero"<<endl;
+    cin>>sumatoria[posicion];
+
+        while (sumatoria[posicion]>=0)
+        {
+            posicion ++;
+            cout<<"Ingrese otro numero"<<endl;
+            cin>>sumatoria[posicion];
+        }
+            for (int i=0; i<posicion; i++)
+            {
+                suma = suma +sumatoria[i];
             }
-    }
+            cout<<"La suma total es: "<< suma<<endl;
 return 0;
 }
